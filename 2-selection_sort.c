@@ -29,11 +29,13 @@ void selection_sort(int *array, size_t size)
 			}
 			j++;
 		}
-		/**if (i != (unsigned int)least_index)*/
+		if (i != (unsigned int)least_index)
+		{
 			aux = array[i];
 			array[i] = least;
 			array[least_index] = aux;
 			print_array(array, size);
+		}
 		i++;
 	}
 }
